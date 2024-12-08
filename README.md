@@ -35,14 +35,18 @@ A paragraph is classified as **"neutral"** if it primarily:
    - Fine-tune a BERT model using the training script.  
    - Models are saved in `/content/drive/MyDrive/Big Data Project/NLP analysis/`.
 
-### 3. Analyze Text  
+### 3. Prepare Dataset of ESG-Reports
+   - Extract text from PDFs
+   - Keep only segments related to climate change
+
+### 4. Analyze Text  
    - Use the trained model to predict sentiment for new climate-related text files.  
    - Results include sentiment labels:  
      - **`0` (Neutral):** Facts and developments without a positive or negative perspective.  
      - **`-1` (Risk):** Business risks, negative impacts, or adverse developments.  
      - **`1` (Opportunity):** Business opportunities or positive impacts.  
 
-### 4. Save Results  
+### 5. Save Results  
    - Export analysis results as **JSON** and **CSV** files for easy review.  
 
 ---
@@ -50,5 +54,5 @@ A paragraph is classified as **"neutral"** if it primarily:
 ##  Requirements
 
 - **Python**: 3.10+  
-- **Libraries**: `transformers`, `torch`, `pandas`, `numpy`
+- **Libraries**: `transformers`, `torch`, `pandas`, `numpy`, 
 
